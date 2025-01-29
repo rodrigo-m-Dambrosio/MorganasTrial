@@ -6,9 +6,9 @@
         {
             var headers = new
             {
-                UmbGeneratedResource = (string)null,
-                Location = (string)null,
-                UmbNotifications = (string)null
+                UmbGeneratedResource = null as string,
+                Location = null as string,
+                UmbNotifications = null as string
             };
 
             if (response.StatusCode == System.Net.HttpStatusCode.Created)
@@ -32,6 +32,7 @@
                 Body = responseContent,
                 Headers = headers
             };
+
             return result;
         }
     }
